@@ -7,8 +7,8 @@ import android.database.sqlite.SQLiteOpenHelper;
 import androidx.annotation.Nullable;
 
 public class BaseHelper extends SQLiteOpenHelper {
-    Context context;
-    String NombreBase = "MateriasDB";
+    protected Context context;
+    private static final String NombreBase = "MateriasDB.db";
 
     public BaseHelper(@Nullable Context context){
         super(context, NombreBase, null, 1);
@@ -30,8 +30,8 @@ public class BaseHelper extends SQLiteOpenHelper {
                 "IdDeber INTEGER PRIMARY KEY AUTOINCREMENT," +
                 "Nombre TEXT," +
                 "Descripcion TEXT," +
-                "Fecha_Entrega DATE," +
-                "Hora_Entrega TIME," +
+                "Fecha_Entrega TEXT," +
+                "Hora_Entrega TEXT," +
                 "Ubicacion TEXT," +
                 "IdAsignatura INTEGER," +
                 "Ponderacion REAL," +

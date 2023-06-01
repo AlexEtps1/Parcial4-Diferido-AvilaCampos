@@ -6,8 +6,107 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/lsvAsignaturas"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent" />
+    <LinearLayout
+        android:layout_width="363dp"
+        android:layout_height="676dp"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="25dp"
+        tools:layout_editor_absoluteY="29dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="331dp"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="181dp"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/asignatura"
+                    android:clickable="true"
+                    android:layout_width="180dp"
+                    android:layout_height="180dp"
+                    android:src="@drawable/asignatur"/>
+
+                <TextView
+                    android:id="@+id/txtAsigna"
+                    android:layout_width="match_parent"
+                    android:layout_height="52dp"
+                    android:text="ASIGNATURAS"
+                    android:textAlignment="center"
+                    android:textSize="20dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="182dp"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/deberes"
+                    android:clickable="true"
+                    android:layout_width="180dp"
+                    android:layout_height="180dp"
+                    android:src="@drawable/deber"/>
+
+                <TextView
+                    android:id="@+id/txtDeber"
+                    android:layout_width="match_parent"
+                    android:layout_height="52dp"
+                    android:text="DEBERES"
+                    android:textAlignment="center"
+                    android:textSize="20dp"/>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="181dp"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/horario"
+                    android:clickable="true"
+                    android:layout_width="180dp"
+                    android:layout_height="180dp"
+                    android:src="@drawable/horario"/>
+
+                <TextView
+                    android:id="@+id/txtHora"
+                    android:layout_width="match_parent"
+                    android:layout_height="52dp"
+                    android:text="HORARIOS"
+                    android:textAlignment="center"
+                    android:textSize="20dp"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="181dp"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/evento"
+                    android:clickable="true"
+                    android:layout_width="180dp"
+                    android:layout_height="180dp"
+                    android:src="@drawable/evento"/>
+
+                <TextView
+                    android:id="@+id/txtEvento"
+                    android:layout_width="match_parent"
+                    android:layout_height="52dp"
+                    android:text="EVENTOS"
+                    android:textAlignment="center"
+                    android:textSize="20dp"/>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
